@@ -243,6 +243,7 @@ footer a {
   }
   table {
     margin: 80px auto;
+    width: 650px;
   }
   h1 {
     font-size: 3em;
@@ -274,14 +275,19 @@ footer a {
     display: inline;
     padding: 0 10px;
   }
-  header div p {
-    display: inline-block;
-  }
+
+  header div p,
   header div img {
-    vertical-align: bottom;
+    display: inline-block;
+    vertical-align: middle;
   }
+  header div,
   header nav {
-    vertical-align: bottom;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  header div {
+    margin-right: 200px;
   }
 
   body {
@@ -293,6 +299,7 @@ footer a {
   footer {
     font-size: 1em;
     padding: 2em 10em;
+    line-height: 4.5rem;
   }
   table {
     margin: 80px auto;
@@ -313,6 +320,7 @@ footer a {
     width: 48%;
     border-radius: 10px;
     height: 280px;
+    margin-inline: -5px;
   }
   section p {
     margin-bottom: 3.2em;
@@ -323,10 +331,14 @@ footer a {
     background-color: #a3a3a3;
   }
   iframe {
-    display: inline;
+    display: inline-block;
     width: 48%;
     height: 280px;
-    vertical-align: bottom;
+    /* vertical-align: bottom; */
+  }
+  iframe,
+  section {
+    vertical-align: middle;
   }
   aside h2 {
     font-size: 3.8rem;
