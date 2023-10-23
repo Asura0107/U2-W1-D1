@@ -352,3 +352,30 @@ footer a {
     margin: -3px;
   }
 }
+@media print {
+  body {
+    font-size: 24px;
+    padding: 0;
+    background-image: none;
+  }
+  main {
+    box-shadow: none;
+    margin: 0;
+  }
+  thead tr {
+    background-color: #d3d3d3;
+    color: black;
+  }
+  thead tr,
+  tbody tr {
+    border-bottom: 1px solid #666;
+  }
+
+  header,
+  article section,
+  iframe,
+  aside,
+  footer {
+    display: none;
+  }
+}
